@@ -1,0 +1,11 @@
+name: System Info
+
+on:
+  workflow_dispatch:
+
+jobs:
+  get-system-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show system info
+        run: uname -v
